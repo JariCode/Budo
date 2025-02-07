@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
-    <title>Budo</title>
+    <title>Budō</title>
 </head>
 <body>
   <header>
@@ -15,7 +15,7 @@
     <nav>
       <ul>
         <li>
-          <a href="/index.html">Budo</a>
+          <a href="/index.html">Budō</a>
           <a href="/judo.html">Judo</a>
           <a href="/jujutsu.html">Jujutsu</a>
           <a href="/kendo.html">Kendō</a>
@@ -26,8 +26,14 @@
   </video>
   </header>
 
-     <!-- Slideshow alkaa -->
-<div class="slideshow-container">
+<!--Flexbox leipäteksteille ja kuva sliderille-->
+<div class="flexbox">
+  <div class="paragraph">
+    <p><strong>Aikido</strong>(jap. 合気道, Aikidō, suom. harmonisen voiman tie) on nykyaikainen japanilainen budō-laji, jonka kehitti <strong>Morihei Ueshiba</strong> 1900-luvun alkupuolella. Teknisesti tärkein vaikuttaja aikidolle on ollut Daitō-ryū aiki jūjutsu. Aikidolle ominaista on hyökkääjän voimaan ja liikkeeseen mukautuminen ja sen hyväksikäyttö johdattamalla. Ueshiba painotti opetuksessaan myös lajin henkisiä puolia ja pyrkimystä rauhaan. 
+    Harjoittelussa tämä näkyy tekniikoiden pehmeydessä - aikidossa vastustajaa ei pyritä vahingoittamaan</p>
+  </div>
+<!-- Slideshow alkaa -->
+  <div class="slideshow-container">
 
     <div class="mySlides fade">
       <img src="">
@@ -35,7 +41,7 @@
   
     <div class="mySlides fade">
      
-      <img src="" >
+      <img src="/" >
     </div>
   
     <div class="mySlides fade">
@@ -46,14 +52,30 @@
     <div class="mySlides fade">
         <img src="">
     </div>
-  
-  <!-- Dotit -->
+  </div>
+<!--Slideshow loppuu-->
+  <div class="paragraph">
+    <p>Morihei Ueshiban kuoltua 1969 dōshun asema siirtyi hänen pojalleen Kisshōmaru Ueshiballe ja 1999 edelleen Morihei Ueshiban pojanpojalle Moriteru Ueshiballe, 
+      joka tällä hetkellä johtaa kansainvälistä Aikikai-kattojärjestöä sekä järjestön pääpaikkaa, Aikikai honbudōjōta.
+      Aikikaista on vuosien aikana eriytynyt erilaisia tyylisuuntia, joita ovat mm. Shinshin tōitsu -aikidō eli ki-aikidō, Yōshinkai, Yōseikan budō, Tomiki aikido, 
+      Tendōkan aikidō ja Keijutsukai aikidō. Näistä Tomiki-tyyli sisältää jopa kilpailutoimintaa. 
+      </p> 
+    <p>
+      Lähde Wikipedia.
+    </p> 
+  </div>
+</div>
+<!--Flexbox loppuu-->
+
+<!-- Dotit -->
   <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
   </div>
+<!--Dotit loppuu-->
+
 
 <!--Slideshow funktio alkaa-->
   <script>

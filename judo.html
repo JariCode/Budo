@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
-    <title>Budo</title>
+    <title>Budō</title>
 </head>
 <body>
   <header>
@@ -16,7 +16,7 @@
       <ul>
         <li>
           <a href="/aikido.html">Aikido</a>
-          <a href="/index.html">Budo</a>
+          <a href="/index.html">Budō</a>
           <a href="/jujutsu.html">Jujutsu</a>
           <a href="/kendo.html">Kendō</a>
         </li>
@@ -26,8 +26,19 @@
   </video>
   </header>
 
-     <!-- Slideshow alkaa -->
-<div class="slideshow-container">
+<!--Flexbox leipäteksteille ja kuva sliderille-->
+<div class="flexbox">
+  <div class="paragraph">
+    <p><strong>Judo</strong> (jap. 柔道, jūdō) on Japanista lähtöisin oleva kamppailulaji, jonka kehitti <strong>Jigorō Kanō</strong> 1880-luvulla. Nimi jūdō tarkoittaa joustavaa tai pehmeää tietä, periksiantamisen taitoa. 
+    Judotekniikat koostuvat heitoista, sidonnoista, käsilukoista ja kuristuksista. 
+    Harrastajan tason kertoo hänen vyöarvonsa – ylin vyö on musta, 6.–8. dan-arvoilla on mahdollista käyttää myös punavalkoista tai 9. ja 10. dan punaista vyötä.
+    Judon kehitti japanilainen professori ja samuraiperheen poika Jigorō Kanō jujutsun tyylisuuntana. Sana jūdō tarkoittaa 'pehmeä tie', ja lajista oli karsittu jujutsuun kuuluvia vaarallisia lyöntitekniikoita. 
+    Kanō perusti lajinsa opiskeluun vuonna 1882 Kōdōkan-judoinstituutin.
+    Kanōn joukkue voitti vuonna 1886 ottelussa kilpailevan jujutsu-koulukunnan, minkä seurauksena Japanin armeija ja poliisi ottivat judon koulutusohjelmaansa, ja sitä alettiin opettaa myös maan kouluissa. 
+      </p>
+  </div>
+<!-- Slideshow alkaa -->
+  <div class="slideshow-container">
 
     <div class="mySlides fade">
       <img src="">
@@ -35,7 +46,7 @@
   
     <div class="mySlides fade">
      
-      <img src="" >
+      <img src="/" >
     </div>
   
     <div class="mySlides fade">
@@ -46,14 +57,32 @@
     <div class="mySlides fade">
         <img src="">
     </div>
-  
-  <!-- Dotit -->
+  </div>
+<!--Slideshow loppuu-->
+  <div class="paragraph">
+    <p> 
+      Kanō vastusti judon kehittymistä kilpaurheiluksi, ja hän loi oppilailleen kilpailun korvikkeeksi arvoasteikon, jonka tunnusmerkkinä on vyön väri.
+      Kanō ja hänen oppilaansa alkoivat esitellä judoa länsimaissa 1900-luvun taitteessa. Euroopan Judoliitto perustettiin 1949, ja kaksi vuotta myöhemmin järjestettiin ensimmäiset EM-kilpailut. 
+      Kansainvälinen Judoliitto perustettiin 1951, ja lajin ensimmäiset MM-kilpailut järjestettiin Tokiossa 1956. Olympialaisissa judo oli ensi kertaa Tokiossa 1964, ja se on ollut vakituisesti olympiaohjelmassa vuodesta 1972 alkaen. 
+      Naiset alkoivat kilpailla Euroopanmestaruuksista 1975, maailmanmestaruuksista 1980 ja olympiamitaleista 1992.
+      Judossa ei ollut pitkään painoluokkia. Vasta kun hollantilaisjätti Anton Geesink osoitti MM-kilpailuissa 1961 suurten judokojen edun, lajiin tuli avoimen luokan lisäksi kolme painoluokkaa
+      </p> 
+    <p>
+      Lähde Wikipedia.
+    </p> 
+  </div>
+</div>
+<!--Flexbox loppuu-->
+
+<!-- Dotit -->
   <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
     <span class="dot" onclick="currentSlide(4)"></span>
   </div>
+<!--Dotit loppuu-->
+
 
 <!--Slideshow funktio alkaa-->
   <script>

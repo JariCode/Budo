@@ -78,7 +78,8 @@ h1 {
 .slideshow-container {
   max-width: 800px;
   position: relative;
-  margin: auto;
+  margin-top: 40px;
+  
 }
 
 /* Hide the images by default */
@@ -88,7 +89,7 @@ h1 {
 
 .mySlides img {
     width: 800px;
-    height: 500px;
+    height: 450px;
     border-radius: 3%;
 }
 
@@ -124,18 +125,19 @@ h1 {
 /*Flexbox leipäteksteille ja kuvakarusellille*/
 .flexbox {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 /*Flexbox loppuu*/
 
 /*Leipätekstit alkaa*/
 .paragraph {
-  width: 800px;
-  margin: 50px;
+  width: 600px;
+  margin: 40px;
   text-align: left;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 10px;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 15px;
+  line-height: 20px;
   background-color: rgba(190, 184, 95, 0.849);
   color: #301c0d;
   border-radius: 3%;
