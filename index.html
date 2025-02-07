@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
+    <title>Budo</title>
+</head>
+<body>
+  <header>
+    <h1>Budo</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="/aikido.html">Aikido</a>
+          <a href="/judo.html">Judo</a>
+          <a href="/jujutsu.html">Jujutsu</a>
+          <a href="/kendo.html">Kendō</a>
+        </li>
+      </ul>
+    </nav>
+    <video src="/videos/header.mp4" type="video/mp4" autoplay loop muted>
+  </video>
+  </header>
+
+<!--Flexbox leipäteksteille ja kuva sliderille-->
+<div class="flexbox">
+  <div class="paragraph">
+    <p>Budō (jap. 武道, budō) on yhteisnimitys japanilaisille itsepuolustus- ja taistelutaidoille. Budolajeissa pyritään kehittämään harjoittelijan fysiikkaa ja kehollisia taitoja mutta myös harjoittelijaa henkisesti ja sosiaalisesti. 
+    Tässä budōn harjoittelu eroaa länsimaisesta kilpaurheilukäsitteestä, jossa harjoittelijan fyysistä suorituskykyä kehitetään kilpailussa pätemiseksi.</p>
+  </div>
+<!-- Slideshow alkaa -->
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="/kuvat/Tunnelma-alttari.jpg">
+    </div>
+  
+    <div class="mySlides fade">
+     
+      <img src="/kuvat/Tunnelma-bonsai.jpg" >
+    </div>
+  
+    <div class="mySlides fade">
+      
+      <img src="/kuvat/Tunnelma-köysi.jpg">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="/kuvat/Tunnelma-talo-vesi.jpg">
+    </div>
+  </div>
+<!--Slideshow loppuu-->
+  <div class="paragraph">
+    <p>Budōssa saatetaan kilpailla, mutta budōa ei harjoitella kilpailua varten, vaan kilpailu budōssa on vain yksi budōn harjoittelumuoto muiden joukossa, eikä edes tärkein niistä. Kaikissa budōlajeissa ei kilpailla, edes harjoittelumielessä. 
+    Budōn harjoittelua ei myöskään mielletä ikäsidonnaiseksi, vaan sitä on mahdollista harjoitella kuolemaan asti taidossa jatkuvasti kehittyen.</p> 
+    <p>
+      Lähde wikipedia.
+    </p> 
+  </div>
+</div>
+<!--Flexbox loppuu-->
+
+<!-- Dotit -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+<!--Dotit loppuu-->
+
+
+<!--Slideshow funktio alkaa-->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Lisää automaattinen vaihtaminen
+setInterval(function() {
+  plusSlides(1); // Siirtyy seuraavaan kuvaan
+}, 3000); // 3000 millisekuntia = 3 sekuntia
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<!--Slideshow loppuu--> 
+</body>
+</html>
