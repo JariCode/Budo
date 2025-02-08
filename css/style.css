@@ -88,8 +88,8 @@ h1 {
 }
 
 .mySlides img {
-    width: 800px;
-    height: 450px;
+    width: 750px;
+    height: 500px;
     border-radius: 3%;
 }
 
@@ -143,3 +143,37 @@ h1 {
   border-radius: 3%;
 }
 /*Leipäekstit loppuu*/
+
+/*Footer alkaa*/
+Footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  width: 650px;
+  margin: 40px;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 35px;
+  line-height: 10px;
+  color: white;
+  border-radius: 3%;
+  position: relative; /* Sijoittaa elementin suhteessa itseensä */
+  background-image: url('/kuvat/footer.jpg'); /* Asetetaan taustakuva */
+  background-size: cover; /* Kuvan koko täyttää taustan */
+  background-position: center; /* Sijoittaa kuvan keskelle */
+  background-repeat: no-repeat; /* Estää kuvan toistamisen */
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgba(240, 225, 14, 0.952);
+}
+
+.footer a:hover {
+  cursor: pointer;
+  color: wheat;
+}
+/*Footer loppuu*/
