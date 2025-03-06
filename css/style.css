@@ -234,5 +234,27 @@ Footer {
   padding: 8px;
   line-height: 12px;
 }
+/*Navi*/
+nav ul {
+  padding: 5px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+/*Headerin otsikko*/
+h1 {
+  position: absolute;
+  top: 20px; /* Voit säätää tätä arvoa tarpeen mukaan */
+  left: 20px; /* Voit säätää tätä arvoa tarpeen mukaan */
+  font-weight: 600;
+  font-size: 3rem; /* Voit säätää fonttikokoa tarpeen mukaan */
+}
 }
 /*Media screenit loppuu*/
