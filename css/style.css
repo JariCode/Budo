@@ -135,14 +135,13 @@ h1 {
   margin: 40px;
   text-align: left;
   font-size: 1rem;
-  font-weight: 400;
-  padding: 15px;
-  line-height: 20px;
+  padding: 12px;
+  line-height: 16px;
   background-color: rgba(190, 184, 95, 0.849);
   color: #301c0d;
   border-radius: 3%;
 }
-/*Leipäekstit loppuu*/
+/*Leipätekstit loppuu*/
 
 /*Footer alkaa*/
 Footer {
@@ -161,7 +160,7 @@ Footer {
   color: white;
   border-radius: 3%;
   position: relative; /* Sijoittaa elementin suhteessa itseensä */
-  background-image: url('/kuvat/footer.jpg'); /* Asetetaan taustakuva */
+  background-image: url('../kuvat/footer.jpg'); /* Asetetaan taustakuva */
   background-size: cover; /* Kuvan koko täyttää taustan */
   background-position: center; /* Sijoittaa kuvan keskelle */
   background-repeat: no-repeat; /* Estää kuvan toistamisen */
@@ -177,3 +176,63 @@ Footer {
   color: wheat;
 }
 /*Footer loppuu*/
+
+/*Media Screenit alkaa*/
+@media only screen and (max-width: 1300px)  {
+  
+  /*Slideshow*/
+  .slideshow-container {
+    max-width: 700px;
+    position: relative;
+    margin-top: 40px;
+    
+  }
+
+  .mySlides img {
+    width: 600px;
+    height: 400px;
+}
+/*Leipätekstit*/
+
+/*Flexbox leipäteksteille ja kuvakarusellille*/
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*Flexbox loppuu*/
+}
+
+@media only screen and (max-width: 600px)  {
+  
+  /*Slideshow*/
+  .slideshow-container {
+    max-width: 400px;
+    position: relative;
+    margin-top: 40px;
+    
+  }
+
+  .mySlides img {
+    width: 300px;
+    height: 200px;
+}
+
+/*Flexbox leipäteksteille ja kuvakarusellille*/
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*Flexbox loppuu*/
+
+/*Footer*/
+.footer {
+  width: 250px;
+  margin: 20px;
+  text-align: left;
+  font-size: 0.8rem;
+  font-weight: 400;
+  padding: 8px;
+  line-height: 12px;
+}
+}
+/*Media screenit loppuu*/
